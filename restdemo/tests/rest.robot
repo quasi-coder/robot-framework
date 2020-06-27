@@ -36,12 +36,6 @@ POST Example
 	${data}=    Create dictionary    field_1=value_1    field_2=value_2
 	${response}=    Post Request    my_session    my-endpoint    headers=${headers}    data=${data}
 
-
-
-@quasi-coder
-
-
-
 *** Keywords ***
 Browser is opened to login page
     Open browser to login page
