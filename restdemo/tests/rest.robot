@@ -35,12 +35,3 @@ POST Example
 	# POST request with data
 	${data}=    Create dictionary    field_1=value_1    field_2=value_2
 	${response}=    Post Request    my_session    my-endpoint    headers=${headers}    data=${data}
-
-*** Keywords ***
-Browser is opened to login page
-    Open browser to login page
-
-User "${username}" logs in with password "${password}"
-    Input user name    ${username}
-    Input password    ${password}
-    Submit credentials
